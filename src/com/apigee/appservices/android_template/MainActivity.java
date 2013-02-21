@@ -44,14 +44,25 @@ public class MainActivity extends Activity {
         - Keep the type as “book”
         - Enter some other attributes below.    */
     	
-    	Map<String, Object> data = new HashMap<String, Object>();
+       	Map<String, Object> data = new HashMap<String, Object>();
     	data.put("type", "book");
     	data.put("title", "the old man and the sea");
+    
     	
+    /*
+        3. Run the app!
+        
+        You’re good to go! If you’re in Eclipse, just Run the code to your preferred device or emulator.
+        
+        - In the menus, select Run > Run, or hit the green “play” button in your toolbar.
+        - Make sure you’ve followed these steps to add a device to your environment: http://developer.android.com/tools/building/building-eclipse.html
+        - If everything is working as expected, you will get a visual confirmation in the app!		*/
+    	
+
     	client.createEntityAsync(data, new ApiResponseCallback() {
             @Override
             public void onException(Exception e) { // Error - the book was not saved properly
-            	text.setText("Could not create the book.\n\nDid you enter your username correctly on line 34 of src/com/apigee/appservices/android_template/MainActivity.java ?");
+            	text.setText("Could not create the book.\n\nDid you enter your username correctly on line 32 of src/com/apigee/appservices/android_template/MainActivity.java ?");
             }
 
             @Override
@@ -59,23 +70,23 @@ public class MainActivity extends Activity {
             	try { 
 	                if (response != null) { 
 	                	// The saved object is returned in the “response” variable
-	                	// defined on line 60. The code below outputs it on the page!
+	                	// defined on line 69. The code below outputs it on the page!
 	                	String successMessage =	"Success! Here is the object we stored; "
 	                						+   "notice the timestamps and unique id we created for you:\n\n"
 	                						+ 	response.getEntities().get(0).toString();
 	                	text.setText(successMessage);
 	                }
             	} catch (Exception e) {
-                	text.setText("Could not create the book.\n\nDid you enter your username correctly on line 34 of src/com/apigee/appservices/android_template/MainActivity.java ?");            		
+                	text.setText("Could not create the book.\n\nDid you enter your username correctly on line 32 of src/com/apigee/appservices/android_template/MainActivity.java ?");            		
             	}
             }
         });
     	
     	
     /*
-        3. Congrats, you’re done!
+        4. Congrats, you’re done!
 
-        - You can try adding more properties after line 44 and reloading the app!
+        - You can try adding more properties after line 49 and reloading the app!
         - You can then see the admin view of this data by logging in at https://apigee.com/usergrid
         - Or you can go explore more advanced examples in our docs: http://apigee.com/docs/usergrid         */
     }
