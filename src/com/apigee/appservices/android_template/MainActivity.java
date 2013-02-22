@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
     	final TextView text = (TextView) findViewById(R.id.mainActivityText);
     	
 	/* 
-	 	1. Set your account details
+	 	1. Set your account details in the app
 
         - Enter your ORGNAME below — it’s the username you picked when you signed up at apigee.com
         - Keep the APPNAME as “sandbox”: it’s a context we automatically created for you.
@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
    
     	
 	/*
-        2. Let’s save an object!
+        2. Set some details for your first object
 
         Great, we know where your account is now!
         Let’s try to create a book, save it on Apigee, and output it in the app.
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
     
     	
     /*
-        3. Run the app!
+        3. Now run it!
         
         You’re good to go! If you’re in Eclipse, just Run the code to your preferred device or emulator.
         
