@@ -4,7 +4,7 @@ App Services is Apigee’s hosted version of the open-source technology “Userg
 
 Import this project in Eclipse / Android Developer Tools to get started.
 1. Open ADT, do File > Import
-2. Under “General”, select “Existing Projects into Workspace”, and click Next
+2. Under “Android”, select “Existing Android Code into Workspace”, and click Next
 3. Pick the folder containing this README file as the root directory
 4. Eclipse should find an application called appservices-android-template automatically. Just click Finish!
 
