@@ -11,3 +11,5 @@ Import this project in Eclipse / Android Developer Tools to get started.
 You will need to make a few edits for this template to work. Follow the instructions in src/com/apigee/appservices/android_template/MainActivity.java
 
 If you followed the steps correctly, you should see a visual confirmation when you run the app!
+
+This sample is maintained by Tim Anglade. Please open all bugs as issues on our github repo, or email tim@apigee.com if you have any questions.
